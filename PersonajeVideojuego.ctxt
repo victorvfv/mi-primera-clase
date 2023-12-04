@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=PersonajeVideojuego
+comment1.params=nombrePc\ nivelPc
+comment1.target=PersonajeVideojuego(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getnombre()
+comment3.params=
+comment3.target=int\ getNivel()
+comment4.params=
+comment4.target=boolean\ getVivo()
+comment5.params=Usuario
+comment5.target=void\ setUsuario(java.lang.String)
+comment6.params=aumento
+comment6.target=void\ setSubida(int)
+comment7.params=
+comment7.target=void\ setVivo()
+numComments=8
