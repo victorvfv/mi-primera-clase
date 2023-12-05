@@ -33,4 +33,12 @@ public class PersonajeVideojuego {
         Vivo=false;
     }
     
+    public void imprimirEstado(){
+        System.out.println("El juagador " + Nombre + " de Nivel " + Nivel + " esta vivo " + Vivo);
+    }
+    
+    public String mostrar(){
+        String mostrar="jugador " + Nombre + " nivel " + Nivel + " esta vivo? " + Vivo;
+        return mostrar;
+    }
 }
