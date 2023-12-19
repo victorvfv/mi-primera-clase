@@ -1,64 +1,64 @@
 public class PersonajeVideoJuego {
-    private String Nombre;
-    private int Nivel;
-    private boolean Vivo;
+    private String nombre;
+    private int nivel;
+    private boolean vivo;
     
     public PersonajeVideoJuego(String nombrePc , int nivelPc){
-        Nombre = nombrePc;
-        Nivel = nivelPc;
-        Vivo = true;
+        nombre = nombrePc;
+        nivel = nivelPc;
+        vivo = true;
     }
     
     public String getNombre(){
-        return Nombre;
+        return nombre;
     }
     
     public int getNivel(){
-        return Nivel;
+        return nivel;
     }
     
     public boolean getVivo(){
-        return Vivo;
+        return vivo;
     }
     
     public void setUsuario(String Usuario){
-        Nombre=Usuario;
+        nombre=Usuario;
     }
     
     public void setSubida(int aumento){
-        Nivel=Nivel + aumento;
+        nivel=nivel + aumento;
     }
     
     public void setVivo(){
-        if (Vivo==true){
-            Vivo=false;
+        if (vivo==true){
+            vivo=false;
         }
         else{
-             Vivo=true ;  
+             vivo=true ;  
         }
     }
     
     
     public void imprimirDetalles(){
         String Estado;
-        if (Vivo==true){
+        if (vivo==true){
             Estado = "Verdadero";
         }
         else{
              Estado = "falso" ;  
         }
-        System.out.println("El juagador " + Nombre + " de Nivel " + Nivel + " esta vivo? " + Estado);
+        System.out.println("El juagador " + nombre + " de Nivel " + nivel + " esta vivo? " + Estado);
     }
     
     public String getDetalles(){
         String Estado;
-        if (Vivo==true){
+        if (vivo==true){
             Estado = "Verdadero";
         }
         else{
              Estado = "falso" ;  
         }
-        String mostrar="jugador " + Nombre + " nivel " + Nivel + " esta vivo? " + Estado;
+        String mostrar="jugador " + nombre + " nivel " + nivel + " esta vivo? " + Estado;
         return mostrar;
     }
 }
